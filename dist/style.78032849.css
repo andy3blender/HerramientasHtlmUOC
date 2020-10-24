@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root{
+  --colorPrincipal:#328cc1;
+  --colorSecundario:#0b3c5d;
+  /* --colorSecundario:#d9b310; */
+  --colorOscuro:#1d2731;
+  --interiorLibro:#d9b310;
+}
 * {
   margin: 0;
   padding: 0;
@@ -25,49 +32,45 @@ h2{
 }
 
 .piePagina {
-  /* position: fixed; */  
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #023B4D;
+  /* #023B4D; */
+  background-color: var(--colorOscuro);
   color: white;
   text-align: center;
   padding: 10px;
   font-size: 1.1rem;
 }
 
-.seccionCabecera{
-  background-color: whitesmoke;
-  /* background-image: url("/img/lecturaBanner2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 120px; */
+/* PAGINA DE INICIO */
+.seccionCabecera{  
+  background-color: var(--colorSecundario);
 }
-
 .cabecera-container{
-  /* margin-bottom: 30px; */
-  /* margin:15px 25px; */
-  /* margin-top: 10px; */
   width: 100%;
-  /* font-size: 1.4rem; */
+  padding: 10px;
+  /* border: solid 1px violet; */
 }
 .cabecera-container li{
-  /* display: inline-block; */
   list-style: none;
 }
 .cabecera-container a{
-  /* display: inline-block; */
   text-decoration: none;
+  color: whitesmoke;
 }
-.cabecera-itemsRedes li{
+.contenedorRedesSociales{
+  padding-top: 15px;
+}
+.contenedorRedesSociales li{
   display: inline-block;
-  /* list-style: none; */
+  padding-right: 6px;
 }
-.cabecera-itemsRedes img{
+.contenedorRedesSociales img{
   width: 24px;
   transition: transform .2s;
 }
-.cabecera-itemsRedes img:hover{
+.contenedorRedesSociales img:hover{
   transform: scale(1.1);
 }
 .cabecera-logo{
@@ -77,32 +80,35 @@ h2{
 .cabecera-logo img{
   width: 22px;
 }
+.cabecera-itemsLogeo{
+  font-size: 1.3rem;
+}
 .cabecera-itemsNavegacion li{
-  /* list-style: none; */
   text-transform: uppercase;
-  /* font-size: 1.3rem; */
   font-weight: bold;
   line-height: 20px;
-  /* border-bottom: dotted black 1px;
-  border-top: dotted black 1px; */
 }
-
 .bannerEmpresa{
-  background-color: #017FB1;
+  /* #017FB1; */
+  background-color: var(--colorPrincipal);
   color: white;
+  box-shadow: 0px 8px 20px -4px rgba(17,19,26,1);
 }
 .bannerEmpresa-bloque{
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding: 15px;
   border-top: dotted white 1px;
+}
+.centrarLista{
+  text-align: center;
+  list-style-position: inside;
 }
 
 .contenidoCentral{
   width: 75%;
   margin:auto;
+  padding-top: 25px;
   padding-bottom: 15px;
 }
-
 .book .book-image {
   width: 100%;
   height: 225px;
@@ -111,11 +117,13 @@ h2{
   background-position: 50% 50%;
 }
 .book .book-label.label-blue {
-  /*background: #966fee;*/
-  background: #046380;
+  /* background: #046380; */
+  background: var(--interiorLibro);
+  color: #020F14;
 }
 .book .book-label.label-bluerain{
-  background: #066;
+  /* background: #066; */
+  background: var(--colorSecundario);
 }
 .book .book-label.label-yellow {
   background: #edbe48;
@@ -156,21 +164,108 @@ h2{
   padding: 10px 20px;
   text-transform: uppercase;
   text-align: center;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 16px;
   margin-top: 10px;
   margin-bottom: 0;
 }
-
 .book .book-by {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #7c8e9c;
   text-align: center;
 }
 .book .book-number {
   text-align: center;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.2rem;
+}
+.piePagina-itemsNavegacion li{
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  /* color: white; */
+  /* font-size: 1.2rem; */
+}
+.piePagina-itemsNavegacion a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* minimo tablet */
+@media (min-width: 768px){
+  .cabecera-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .cabecera-container div:first-child{
+      order:3;
+  }
+  .cabecera-itemsNavegacion li{
+    display: inline-block;
+  }
+  .cabecera-itemsLogeo li{
+    display: inline-block;
+  }
+  .cabecera-itemsNavegacion li:not(:first-child)::before{
+    content: "|";
+    color: whitesmoke;
+  }
+  .cabecera-itemsLogeo li:not(:first-child)::before{
+    content: "|";
+    color: whitesmoke;
+  }
+  .bannerEmpresa-franja{
+    display: grid;
+    /* column-gap: 25px; */
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+  .bannerEmpresa-bloque{    
+    border: none;
+    border-right: dotted white 1px;  
+  }
+  .contenedorLibros{
+    display: grid;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction: row; */
+  }
+  .piePagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .piePagina-itemsNavegacion li{
+    display: inline-block;
+  }
+  .piePagina-itemsNavegacion li:not(:first-child)::before{
+    content: "|";
+  }
+  .piePagina :nth-child(1) { 
+    order:2;
+  }
+  .piePagina :nth-child(2) { 
+    order:1;
+  }
+  .piePagina :nth-child(3) { 
+    order:3;
+  }
+}
+
+/* large screen */
+@media (min-width: 900px){
+  .contenedorLibros{
+    display: grid;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=/style.78032849.css.map */
