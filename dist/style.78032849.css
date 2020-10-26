@@ -23,6 +23,10 @@ body{
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-size: 1.4rem;
+
+  
+    height: 100vh;
+    /* width: 100%; */
 }
 h1{
   font-size: 2.6rem;
@@ -88,11 +92,164 @@ h2{
   font-weight: bold;
   line-height: 20px;
 }
+
+.inicioSeccion{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 75%;
+  /* text-align: center; */
+  margin: auto;
+}
+
+/* formulario regitro */
+
+.formulario{
+  width: 100%;
+  padding-top: 20px;
+}
+.formulario-inputs input{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  margin-bottom: 12px;
+}
+.seccionPolitica{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 9px;
+}
+.seccionPolitica-aceptar{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.btn{
+  color: #FFFFFF;
+  /* #FF5037; */
+  background-color: var(--interiorLibro);
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: var(--colorOscuro);
+  color: #FFFFFF;
+}
+
+/* .tituloSeccion{
+  border-bottom: solid 1px blue;
+  width: 75%;
+} */
+
+/* CARRUSEL */
+.carrusel{
+  width: 100%;
+  /* padding-top: 20px; */
+  /* border: solid 1px blue; */
+  /* margin: 0px 60px; */
+}
+/* .carrusel h2{
+  font-size: 26px;
+  line-height: 38px;
+  padding-bottom: 24px;
+  opacity: .9;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+} */
+
+/* images */
+
+.tarjeta-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* width: fit-content; */
+  height: 304px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+.tarjeta-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: .5s ease-in-out;
+}
+.tarjeta{
+  position: relative;
+  width: 275px;
+  padding: 0 18px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+/* .tarjeta h4{
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: #fff;
+  padding: 15px;
+}
+.tarjeta h4 small{
+  font-size: 15px;
+  display: block;
+} */
+.tarjeta a img{
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* height: 300px; */
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+  transition: .3s ease-in-out;
+}
+.tarjeta a img:hover{
+  opacity: .85;
+}
+
+/* buttons */
+
+.tarjeta-arrow{
+  border-radius: 30px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+}
+.tarjeta-arrow:focus{
+  outline: 0;
+}
+.tarjeta-arrow svg{
+  width: 12px;
+  height: 100%;
+  color: rgba(0,0,0,.7);
+}
+.tarjeta-prev{
+  left: 0px;
+}
+.tarjeta-next{
+  right: 0px;
+}
+/* FIN CARRUSEL */
+
 .bannerEmpresa{
   /* #017FB1; */
   background-color: var(--colorPrincipal);
   color: white;
-  box-shadow: 0px 8px 20px -4px rgba(17,19,26,1);
+  box-shadow: 0px 8px 20px -4px rgba(17,19,26,1); 
 }
 .bannerEmpresa-bloque{
   padding: 15px;
@@ -236,6 +393,15 @@ h2{
     grid-template-columns: 1fr 1fr;
     /* flex-direction: row; */
   }
+  .cuerpo-LeftAlign{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    /* column-gap: 25px; */
+    grid-template-columns: 1fr 2fr;
+    /* justify-content: center; */
+    align-content: center;   
+}
   .piePagina{
     display: flex;
     justify-content: space-between;

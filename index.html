@@ -7,9 +7,9 @@
     <meta name="description" content="Club lector">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="styleCarru.css"> -->
     <link rel="shortcut icon" href="img/favicon.ico" />
     <title>Inicio club de lectura</title>
-    <script src="./index.js"></script>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             </div>
 
             <div class="cabecera-logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/clublector-isologo.png" alt="Logo Club">
                     <strong>Club Lector</strong>
                 </a>
@@ -35,7 +35,7 @@
             <nav>
                 <ul class="cabecera-itemsNavegacion">
                     <li>
-                        <a href="#">Clubes tem&aacute;ticos</a>
+                        <a href="categories.html">Categor&iacute;as</a>
                     </li>
                     <li>
                         <a href="#">Lecturas 2020</a>
@@ -70,7 +70,126 @@
         </div>
     </section>
 
-    <section class="contenidoCentral">
+    <section class="inicioSeccion">
+        <div class="carrusel">
+            <h2>Libros de este mes</h2>
+            <div class="tarjeta-list" id="tarjeta-list">
+                <button class="tarjeta-arrow tarjeta-prev" id="button-prev">
+                    &#60;
+                </button>
+                <div class="tarjeta-track" id="track">
+                    <div class="tarjeta">
+                        <div>
+                            <a href="/">
+                                <!-- <h4><small>Share Your Message</small>Watch</h4> -->
+                                <picture>
+                                    <img src="./img/condenados.jpg" alt="Image">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div>
+                            <a href="/">
+                                <!-- <h4><small>Share Your Message</small>Watch</h4> -->
+                                <picture>
+                                    <img src="./img/guardian.jpg" alt="Image">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div>
+                            <a href="/">
+                                <!-- <h4><small>Share Your Message</small>Watch</h4> -->
+                                <picture>
+                                    <img src="./img/Harry.jpg" alt="Image">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div>
+                            <a href="/">
+                                <!-- <h4><small>Share Your Message</small>Watch</h4> -->
+                                <picture>
+                                    <img src="./img/magnus.jpg" alt="Image">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div>
+                            <a href="/">
+                                <!-- <h4><small>Share Your Message</small>Watch</h4> -->
+                                <picture>
+                                    <img src="./img/maquinaTiempo2.png" alt="Image">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div>
+                            <a href="/">
+                                <!-- <h4><small>Share Your Message</small>Watch</h4> -->
+                                <picture>
+                                    <img src="./img/tombs.jpg" alt="Image">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="tarjeta-arrow tarjeta-next" id="button-next">
+                    &#62;
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="inicioSeccion">
+        <h2>&Uacute;nete al club</h2>
+        <div class="cuerpo-LeftAlign">
+            <div>
+                <p>Estamos leyendo tu pr&oacute;ximo libro favorito.</p>
+                <p>¿Te lo perder&aacute;s?</p>
+            </div>
+            <form class="formulario">
+                <div class="formulario-inputs">
+                    <input type="text" id="txtNombre" name="NombreUsuario" required placeholder="Nombre">
+                    <input type="email" id="txtMail" name="MailUsuario" required placeholder="Correo electrónico">
+                    <input type="password" id="txtPass" name="PassUsuario" required placeholder="Contraseña">
+                </div>
+
+                <div class="seccionPolitica">
+                    <p class="enlaceInterno">
+                        INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <b>Club Lector</b>. <b>Finalidades</b>: recogida de
+                        datos para
+                        la inscripción
+                        como socio del interesado. <b>Legitimación</b>: Consentimiento del interesado.
+                        <b>Destinatarios</b>:
+                        No están
+                        previstas cesiones de datos a terceros, excepto obligación legal. <b>Derechos</b>: Puede
+                        retirar su
+                        consentimineto en cualquier momento, así como acceder, rectificar, suprimir sus datos y
+                        otros
+                        derechos dirigiéndose a clublector@clublector.org. <b>Información Adicional</b>: Puede
+                        ampliar la
+                        información en el
+                        enlace de <a href="">Aviso Legal</a> y <a href=""> Política de privacidad</a>.
+                    </p>
+                    <div class="seccionPolitica-aceptar">
+                        <input type="checkbox" id="chkPolitica" name="politicaPrivacidad" required>
+                        <label for="chkPolitica">He leído y acepto la política de
+                            privacidad</label>
+                    </div>
+                    <button class="btn">REG&Iacute;STRAME</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- <section class="contenidoCentral">
         <h2>LECTURAS DE ESTE MES</h2>
         <div class="contenedorLibros">
             <div class="book">
@@ -206,7 +325,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer class="piePagina">
 
@@ -249,6 +368,7 @@
         </div>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 
 </html>

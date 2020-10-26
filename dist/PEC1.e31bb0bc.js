@@ -118,8 +118,32 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-var name = 'world';
-console.log("Hola ".concat(name));
+var buttonPrev = document.getElementById('button-prev');
+var buttonNext = document.getElementById('button-next');
+var track = document.getElementById('track');
+var tarjetaList = document.getElementById('tarjeta-list');
+var tarjeta = document.querySelectorAll('.tarjeta');
+var tarjetaWidth = tarjeta[0].offsetWidth;
+
+buttonPrev.onclick = function () {
+  return Move(1);
+};
+
+buttonNext.onclick = function () {
+  return Move(2);
+};
+
+function Move(value) {
+  var trackWidth = track.offsetWidth;
+  var listWidth = tarjetaList.offsetWidth;
+  track.style.left == "" ? leftPosition = track.style.left = 0 : leftPosition = parseFloat(track.style.left.slice(0, -2) * -1);
+
+  if (leftPosition < trackWidth - listWidth && value == 2) {
+    track.style.left = "".concat(-1 * (leftPosition + tarjetaWidth), "px");
+  } else if (leftPosition > 0 && value == 1) {
+    track.style.left = "".concat(-1 * (leftPosition - tarjetaWidth), "px");
+  }
+}
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -148,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33133" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34673" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
