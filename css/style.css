@@ -395,7 +395,7 @@ h2{
     grid-template-columns: 1fr 1fr;
     /* flex-direction: row; */
   }
-  .cuerpo-LeftAlign{
+  .contenidoRegistro{
     /* display: flex;
     justify-content: space-between; */
     display: grid;
