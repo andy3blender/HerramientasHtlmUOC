@@ -300,8 +300,8 @@ ul.breadcrumb li a:hover {
   background-position: 50% 50%;
 }
 .book .book-label.label-blue {
-  /* background: #046380; */
-  background: var(--interiorLibro);
+  background: #046380;
+  /* background: var(--interiorLibro); */
   color: #020F14;
 }
 .book .book-label.label-bluerain{
@@ -309,7 +309,8 @@ ul.breadcrumb li a:hover {
   background: var(--colorSecundario);
 }
 .book .book-label.label-yellow {
-  background: #edbe48;
+  /* background: #edbe48; */
+  background: var(--interiorLibro);
 }
 .book .book-label {
   height: 20px;
@@ -376,6 +377,10 @@ ul.breadcrumb li a:hover {
   color: white;
 }
 
+.seccionClub{
+  padding-bottom: 50px;
+  text-align: left;
+}
 
 
 
