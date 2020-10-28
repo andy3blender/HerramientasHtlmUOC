@@ -35,6 +35,31 @@ h2{
   font-size: 2.4rem;
 }
 
+/* breadcrumb */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+  text-align: left;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1.1rem;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
 .piePagina {
   left: 0;
   bottom: 0;
@@ -116,7 +141,7 @@ h2{
 }
 .seccionPolitica{
   font-family: 'Times New Roman', Times, serif;
-  font-size: 9px;
+  font-size: 1.2rem;
 }
 .seccionPolitica-aceptar{
   padding-top: 15px;
