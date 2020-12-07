@@ -27,8 +27,9 @@
 
             <div class="cabecera-logo">
                 <a href="/index.html">
-                    <img src="/clublector-isologo.6f4972b7.png" alt="Logo Club">
-                    <strong>Club Lector</strong>
+                    <!-- <img src="img/clublector-isologo.png" alt="Logo Club">
+                    <strong>Club Lector</strong> -->
+                    <img src="/logo_small.2b555a6a.png" alt="Logo del Club">
                 </a>
             </div>
             <nav>
@@ -79,6 +80,15 @@
 
         <article class="biografia">
             <h2>Sobre la obra</h2>
+            <picture>
+                <source media="(max-width: 400px)" srcset="/mundoFeliz325.9c39c5fc.jpg">
+                <source media="(max-width: 900px)" srcset="/mundoFeliz768.60447354.jpg">
+                <source media="(min-width: 900px)" srcset="/mundoFeliz1280.cbbb1200.jpg">
+                <img src="/mundoFeliz1280.cbbb1200.jpg" alt="Un mundo feliz" class="img-responsive">
+                <caption>Escena de la pel&iacute;cula <em lang="en">Brave
+                        New World</em> basada en esta novela
+                </caption>
+            </picture>
             <p>
                 <em>Un mundo feliz</em> (en inglés <em lang="en">Brave New World</em>) es la novela más famosa del
                 escritor
@@ -106,8 +116,9 @@
             </blockquote>
 
             <h3>Sobre Aldous Huxley</h3>
-            <div class="imagen-capital" style="background-image: url('/aldous-huxley.3fd642d5.jpg');">
-            </div>
+            <!-- <div class="imagen-capital" style="background-image: url('img/aldous-huxley.jpg');">
+            </div> -->
+            <img src="/aldous-huxley.3fd642d5.jpg" class="fotoCircular" alt="Foto de Aldous Huxley">
             <p>
                 Aldous Leonard Huxley (Godalming, 26 de julio de 1894 - Los Ángeles, 22 de noviembre de 1963) fue un
                 escritor y filósofo británico que emigró a los Estados Unidos. Miembro de una reconocida familia de
@@ -132,33 +143,51 @@
         </article>
 
         <aside class="relacionados">
-            <h2>Libros relacionados</h2>
-            <ul class="centrarLista">
-                <li>
-                    <a href="#">La naranja mec&aacute;nica</a>
-                </li>
-                <li>
-                    <a href="#">La carretera</a>
-                </li>
-            </ul>
-            <h2>Otros clubes</h2>
-            <ul class="centrarLista">
-                <li>
-                    <a href="/lecturas.html#club2">Cr&oacute;nica negra</a>
-                </li>
-                <li>
-                    <a href="/lecturas.html#club3">Novela ilustrada</a>
-                </li>
-                <li>
-                    <a href="/lecturas.html#club4">Palabras de luz y sombra</a>
-                </li>
-                <li>
-                    <a href="/lecturas.html#club5">Empieza la funci&oacute;n</a>
-                </li>
-                <li>
-                    <a href="/lecturas.html#club6">Para siempre</a>
-                </li>
-            </ul>
+            <div class="cardRelacionados">
+                <div class="cardRelacionados-titulo">
+                    <h3>Libros relacionados</h3>
+                </div>
+                <ul class="centrarLista">
+                    <li>
+                        <a href="#">La naranja mec&aacute;nica</a>
+                    </li>
+                    <li>
+                        <a href="#">La carretera</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cardRelacionados">
+                <div class="cardRelacionados-titulo">
+                    <h3>Otros clubes</h3>
+                </div>
+                <ul class="centrarLista">
+                    <li>
+                        <a href="/lecturas.html#club2">Cr&oacute;nica negra</a>
+                    </li>
+                    <li>
+                        <a href="/lecturas.html#club3">Novela ilustrada</a>
+                    </li>
+                    <li>
+                        <a href="/lecturas.html#club4">Palabras de luz y sombra</a>
+                    </li>
+                    <li>
+                        <a href="/lecturas.html#club5">Empieza la funci&oacute;n</a>
+                    </li>
+                    <li>
+                        <a href="/lecturas.html#club6">Para siempre</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cardRelacionados">
+                <div class="cardRelacionados-titulo">
+                    <h3>Inscr&iacute;bete en este club</h3>
+                </div>
+                <a href="/index.html#divRegistro">
+                    <img src="/logo_small_icon_blue.57d2fa9d.png" class="animacionLogo">
+                </a>
+            </div>
         </aside>
     </div>
 
@@ -177,12 +206,6 @@
             </ul>
         </div>
 
-        <div class="piePagina-info">
-            <p>clublectura@gmail.com</p>
-            <p>022863123 // 0992126512</p>
-            <p>Quito - Ecuador</p>
-        </div>
-
         <div class="piePagina-redes">
             <ul class="contenedorRedesSociales">
                 <li>
@@ -199,6 +222,10 @@
                     <a href="#"><img src="/instagramLogo32.fd2c7818.png" alt="twitter-logo" title="Síguenos en Instagram"></a>
                 </li>
             </ul>
+        </div>
+
+        <div class="piePagina-info">
+            <img src="/logo_footer.798d1207.png" alt="Logo del club" title="Más sobre nosotros">
         </div>
     </footer>
 

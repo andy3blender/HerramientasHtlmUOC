@@ -59,8 +59,19 @@ ul.breadcrumb li a:hover {
   background-color: var(--colorOscuro);
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 10px 10px 3px 10px;
   font-size: 1.1rem;
+  -webkit-clip-path: circle(55px at 50% 100%);
+          clip-path: circle(55px at 50% 100%);
+  transition: all 0.6s;
+}
+.piePagina:hover {
+  -webkit-clip-path: circle(100% at 50% 100%);
+          clip-path: circle(100% at 50% 100%);
+  transition: all 0.6s;
+}
+.piePagina-info{
+  padding-top: 11px;  
 }
 
 /* PAGINA DE INICIO */
@@ -100,9 +111,9 @@ ul.breadcrumb li a:hover {
   font-size: 2.6rem;
   padding: 8px;
 }
-.cabecera-logo img{
+/* .cabecera-logo img{
   width: 22px;
-}
+} */
 .cabecera-itemsLogeo{
   font-size: 1.3rem;
 }
@@ -237,7 +248,10 @@ ul.breadcrumb li a:hover {
 .centrarLista{
   text-align: center;
   list-style-position: inside;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
 .contenidoCentral{
   width: 75%;
   margin:auto;
@@ -362,7 +376,6 @@ ul.breadcrumb li a:hover {
 }
 .biografia h2{
   padding-bottom: 15px;
-  /* padding-top: 15px; */
 }
 .biografia h3{
   padding-bottom: 15px;
@@ -389,8 +402,15 @@ line-height: 20px;
   border-radius: 150px;
   shape-outside: circle();
 }
+
+.relacionados{
+  /* max-height: 20px; */
+  overflow: hidden;
+}
+
 .relacionados li{
   list-style: none;
+  font-size: 1.2rem;
 }
 .relacionados a{
   text-decoration: none;
@@ -446,7 +466,7 @@ line-height: 20px;
   .piePagina{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
   }
   .piePagina-itemsNavegacion li{
     display: inline-block;
@@ -455,21 +475,25 @@ line-height: 20px;
     content: "|";
   }
   .piePagina :nth-child(1) { 
-    order:2;
-  }
-  .piePagina :nth-child(2) { 
     order:1;
   }
-  .piePagina :nth-child(3) { 
+  .piePagina :nth-child(2) { 
     order:3;
+  }
+  .piePagina :nth-child(3) { 
+    order:2;   
+  }
+  .piePagina-info{
+    margin-left: -240px;
   }
 
   /* detalle lectura */
   .contenedorLectura{
+    width: 95%;
     display: grid;
     -moz-column-gap: 15px;
          column-gap: 15px;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 0.7fr;
     align-content: center;
   }
 }
@@ -482,6 +506,105 @@ line-height: 20px;
          column-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+}
+
+/* ANIMACIONES */
+/* titulos categorias */
+.tituloClub{
+  background-color: #252839;
+}
+.tituloClub h2{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  color: #252839;
+  -webkit-text-stroke: 0.5px #383d52;
+}
+.tituloClub h2::before{
+  content: attr(data-foo);
+  position: absolute;
+  width: 0;
+  color: #01fe87;
+  -webkit-text-stroke: 0px #383d52;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  -webkit-animation: mostrarTitulo 6s linear infinite;
+          animation: mostrarTitulo 6s linear infinite;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes mostrarTitulo{
+  0%, 10%, 100%{
+    width: 0;
+  }
+  70%, 90%{
+    width: 100%;
+  }
+}
+
+@keyframes mostrarTitulo{
+  0%, 10%, 100%{
+    width: 0;
+  }
+  70%, 90%{
+    width: 100%;
+  }
+}
+
+/* logo giratorio */
+.animacionLogo{
+  width:80px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-animation: giraLogo 7s infinite;
+          animation: giraLogo 7s infinite;  
+}
+@-webkit-keyframes giraLogo{
+  0%{
+    transform: rotateY(0deg);
+  }
+  50%{
+    transform: rotateY(180deg);
+  }
+  100%{
+    transform: rotateY(360deg);
+  }
+}
+@keyframes giraLogo{
+  0%{
+    transform: rotateY(0deg);
+  }
+  50%{
+    transform: rotateY(180deg);
+  }
+  100%{
+    transform: rotateY(360deg);
+  }
+}
+
+.cardRelacionados{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+.cardRelacionados-titulo{
+  background-color: var(--colorSecundario);
+  color: white;
+}
+.fotoCircular{
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  float: left; 
+  margin: 0px 15px 15px 0px;
+  width: 190px;
+  height: 190px;
 }
 
 /*# sourceMappingURL=/style.78032849.css.map */

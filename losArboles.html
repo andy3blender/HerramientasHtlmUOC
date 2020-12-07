@@ -27,8 +27,9 @@
 
             <div class="cabecera-logo">
                 <a href="index.html">
-                    <img src="img/clublector-isologo.png" alt="Logo Club">
-                    <strong>Club Lector</strong>
+                    <!-- <img src="img/clublector-isologo.png" alt="Logo Club">
+                    <strong>Club Lector</strong> -->
+                    <img src="img/logo_small.png" alt="Logo del Club">
                 </a>
             </div>
             <nav>
@@ -79,6 +80,12 @@
 
         <article class="biografia">
             <h2>Sobre la obra</h2>
+            <picture>
+                <source media="(max-width: 400px)" srcset="/img/losArboles325.jpg">
+                <source media="(max-width: 900px)" srcset="/img/losArboles768.jpg">
+                <source media="(min-width: 900px)" srcset="/img/losArboles1280.jpg">
+                <img src="/img/losArboles1280.jpg" alt="Los arboles mueren de pie'" class="img-responsive">
+            </picture>
             <p>
                 El señor Balboa tenía un nieto desalmado al que, un día, tuvo que echar de casa. Luego de un tiempo,
                 Balboa empieza a escribir cartas apócrifas haciéndose pasar por su nieto para que su esposa no se
@@ -94,8 +101,9 @@
             </p>
 
             <h3>Sobre Alejandro Casona</h3>
-            <div class="imagen-capital" style="background-image: url('img/casona.jpg');">
-            </div>
+            <!-- <div class="imagen-capital" style="background-image: url('img/casona.jpg');">
+            </div> -->
+            <img src="img/casona.jpg" class="fotoCircular" alt="Foto de Alejandro Casona">
             <p>
                 Alejandro Rodríguez Álvarez, conocido como Alejandro Casona, o también «El perdido» (Besullo, Cangas del
                 Narcea, Asturias, 23 de marzo de 1903-Madrid, 17 de septiembre de 1965) fue un dramaturgo y maestro
@@ -116,33 +124,51 @@
         </article>
 
         <aside class="relacionados">
-            <h2>Libros relacionados</h2>
-            <ul class="centrarLista">
-                <li>
-                    <a href="#" lang="CA">Teatre Escollit</a>
-                </li>
-                <li>
-                    <a href="#">Esperando a Godot</a>
-                </li>
-            </ul>
-            <h2>Otros clubes</h2>
-            <ul class="centrarLista">
-                <li>
-                    <a href="lecturas.html#club1">Mundos no deseados</a>
-                </li>
-                <li>
-                    <a href="lecturas.html#club2">Crónica negra</a>
-                </li>
-                <li>
-                    <a href="lecturas.html#club3">Novela ilustrada</a>
-                </li>
-                <li>
-                    <a href="lecturas.html#club4">Palabras de luz y sombra</a>
-                </li>
-                <li>
-                    <a href="lecturas.html#club6">Para siempre</a>
-                </li>
-            </ul>
+            <div class="cardRelacionados">
+                <div class="cardRelacionados-titulo">
+                    <h3>Libros relacionados</h3>
+                </div>
+                <ul class="centrarLista">
+                    <li>
+                        <a href="#" lang="CA">Teatre Escollit</a>
+                    </li>
+                    <li>
+                        <a href="#">Esperando a Godot</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cardRelacionados">
+                <div class="cardRelacionados-titulo">
+                    <h3>Otros clubes</h3>
+                </div>
+                <ul class="centrarLista">
+                    <li>
+                        <a href="lecturas.html#club1">Mundos no deseados</a>
+                    </li>
+                    <li>
+                        <a href="lecturas.html#club2">Crónica negra</a>
+                    </li>
+                    <li>
+                        <a href="lecturas.html#club3">Novela ilustrada</a>
+                    </li>
+                    <li>
+                        <a href="lecturas.html#club4">Palabras de luz y sombra</a>
+                    </li>
+                    <li>
+                        <a href="lecturas.html#club6">Para siempre</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cardRelacionados">
+                <div class="cardRelacionados-titulo">
+                    <h3>Inscr&iacute;bete en este club</h3>
+                </div>
+                <a href="index.html#divRegistro">
+                    <img src="img/logo_small_icon_blue.png" class="animacionLogo">
+                </a>
+            </div>
         </aside>
     </div>
 
@@ -161,12 +187,6 @@
             </ul>
         </div>
 
-        <div class="piePagina-info">
-            <p>clublectura@gmail.com</p>
-            <p>022863123 // 0992126512</p>
-            <p>Quito - Ecuador</p>
-        </div>
-
         <div class="piePagina-redes">
             <ul class="contenedorRedesSociales">
                 <li>
@@ -183,6 +203,13 @@
                     <a href="#"><img src="img/instagramLogo32.png" alt="twitter-logo" title="Síguenos en Instagram"></a>
                 </li>
             </ul>
+        </div>
+
+        <div class="piePagina-info">
+            <!-- <p>clublectura@gmail.com</p>
+            <p>022863123 // 0992126512</p>
+            <p>Quito - Ecuador</p> -->
+            <img src="img/logo_footer.png" alt="Logo del club" title="Más sobre nosotros">
         </div>
     </footer>
 
