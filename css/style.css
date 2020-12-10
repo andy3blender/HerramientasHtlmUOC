@@ -109,9 +109,6 @@ ul.breadcrumb li a:hover {
   font-size: 2.6rem;
   padding: 8px;
 }
-/* .cabecera-logo img{
-  width: 22px;
-} */
 .cabecera-itemsLogeo{
   font-size: 1.3rem;
 }
@@ -236,8 +233,8 @@ ul.breadcrumb li a:hover {
 .bannerEmpresa{
   background-color: var(--colorPrincipal);
   color: white;
-  -webkit-box-shadow: 0px 8px 20px -4px rgba(17,19,26,1);
-  -moz-box-shadow: 0px 8px 20px -4px rgba(17,19,26,1);
+  /* -webkit-box-shadow: 0px 8px 20px -4px rgba(17,19,26,1);
+  -moz-box-shadow: 0px 8px 20px -4px rgba(17,19,26,1); */
   box-shadow: 0px 8px 20px -4px rgba(17,19,26,1); 
 }
 .bannerEmpresa-bloque{
@@ -281,7 +278,7 @@ ul.breadcrumb li a:hover {
   bottom: 0;
   text-align: center;
   color: #fff;
-  -webkit-transition: all .2s ease-in-out;
+  /* -webkit-transition: all .2s ease-in-out; */
   transition: all .2s ease-in-out;
 }
 .book .book-label {
@@ -291,7 +288,7 @@ ul.breadcrumb li a:hover {
   bottom: 0;
   text-align: center;
   color: #fff;
-  -webkit-transition: all .2s ease-in-out;
+  /* -webkit-transition: all .2s ease-in-out; */
   transition: all .2s ease-in-out;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -521,14 +518,14 @@ line-height: 20px;
   width: fit-content;
   position: relative;
   color: #252839;
-  -webkit-text-stroke: 0.5px #383d52;
+  /* -webkit-text-stroke: 0.5px #383d52; */
 }
 .tituloClub h2::before{
   content: attr(data-foo);
   position: absolute;
   width: 0;
   color: #01fe87;
-  -webkit-text-stroke: 0px #383d52;
+  /* -webkit-text-stroke: 0px #383d52; */
   border-right: 2px solid #01fe87;
   overflow: hidden;
   animation: mostrarTitulo 6s linear infinite;
