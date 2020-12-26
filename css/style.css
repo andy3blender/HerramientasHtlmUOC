@@ -247,6 +247,12 @@ ul.breadcrumb li a:hover {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.justificarLista{
+  text-align: justify;
+  list-style-position: inside;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 .contenidoCentral{
   width: 75%;

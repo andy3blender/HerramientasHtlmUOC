@@ -80,15 +80,10 @@
 
         <article class="biografia">
             <h2>Sobre la obra</h2>
-            <picture>
-                <source media="(max-width: 400px)" srcset="/img/mundoFeliz325.jpg">
-                <source media="(max-width: 900px)" srcset="/img/mundoFeliz768.jpg">
-                <source media="(min-width: 900px)" srcset="/img/mundoFeliz1280.jpg">
-                <img src="/img/mundoFeliz1280.jpg" alt="Un mundo feliz" class="img-responsive">
-                <caption>Escena de la pel&iacute;cula <em lang="en">Brave
-                        New World</em> basada en esta novela
-                </caption>
-            </picture>
+            <img srcset="img/Un-mundo-feliz-320w.jpg 320w,
+            img/Un-mundo-feliz-480w.jpg 480w,
+            img/Un-mundo-feliz-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+                src="img/Un-mundo-feliz-800w.jpg" alt="Portada libro Un mundo feliz" class="img-responsive">
             <p>
                 <em>Un mundo feliz</em> (en inglés <em lang="en">Brave New World</em>) es la novela más famosa del
                 escritor
@@ -116,8 +111,6 @@
             </blockquote>
 
             <h3>Sobre Aldous Huxley</h3>
-            <!-- <div class="imagen-capital" style="background-image: url('img/aldous-huxley.jpg');">
-            </div> -->
             <img src="img/aldous-huxley.jpg" class="fotoCircular" alt="Foto de Aldous Huxley">
             <p>
                 Aldous Leonard Huxley (Godalming, 26 de julio de 1894 - Los Ángeles, 22 de noviembre de 1963) fue un
@@ -133,15 +126,29 @@
                 representantes del pensamiento moderno.
             </p>
 
-            <h3>Book trailer</h3>
-            <figure>
-                <div class="video-fluid">
-                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/fkYuCpsGEEs"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                        class="video-fluid-item"></iframe>
-                </div>
-                <figcaption><em>Brave New World.</em> Book Trailer, Beta–1 Studios</figcaption>
-            </figure>
+            <h3>Adaptaciones</h3>
+            <picture>
+                <source media="(max-width: 400px)" srcset="/img/mundoFeliz325.jpg">
+                <source media="(max-width: 900px)" srcset="/img/mundoFeliz768.jpg">
+                <source media="(min-width: 900px)" srcset="/img/mundoFeliz1280.jpg">
+                <img src="/img/mundoFeliz1280.jpg" alt="Un mundo feliz" class="img-responsive">
+                <caption>Escena de la pel&iacute;cula <em lang="en">Brave
+                        New World</em> basada en esta novela
+                </caption>
+            </picture>
+            <p>
+                La primera traducción al castellano fue la realizada por Luys Santa Marina para el editor Luis Miracle
+                en 1935, en su colección Centauro. Esta traducción fue la de referencia en español hasta la realizada
+                para Plaza & Janés en 1969 por Ramón Hernández.
+            </p>
+            <ul class="justificarLista">
+                <li><em lang="en">Brave New World</em>(radio) CBS Radio Workshop (27 de enero y 3 de febrero de 1956)
+                </li>
+                <li><em lang="en">Brave New World</em>(TV 1980)
+                </li>
+                <li><em lang="en">Brave New World</em>(Serie de televisión) NBCUniversal Peacock (2020)
+                </li>
+            </ul>
         </article>
 
         <aside class="relacionados">
