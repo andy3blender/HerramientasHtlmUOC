@@ -78,14 +78,10 @@
 
         <article class="biografia">
             <h2>Sobre la obra</h2>
-            <picture>
-                <source media="(max-width: 400px)" srcset="/img/persepolis325.jpg">
-                <source media="(max-width: 900px)" srcset="/img/persepolis768.jpg">
-                <source media="(min-width: 900px)" srcset="/img/persepolis1280.jpg">
-                <img src="/img/persepolis1280.jpg" alt="Persepolis" class="img-responsive">
-                <caption>Escena de la pel&iacute;cula Persépolis basada en esta novela
-                </caption>
-            </picture>
+            <img srcset="img/PersepolisPortada320w.jpg 320w,
+            img/PersepolisPortada480w.jpg 480w,
+            img/PersepolisPortada800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+                src="img/PersepolisPortada800w.jpg" alt="Portada libro Persepolis" class="img-responsive">
             <p>
                 Persépolis es la historia autobiográfica de la iraní Marjane Satrapi, la historia de cómo creció en un
                 régimen fundamentalista islámico que la acabaría llevando a abandonar su país. El cómic empieza a partir
@@ -117,15 +113,22 @@
                 consolidarse.
             </p>
 
-            <h3>Book trailer</h3>
-            <figure>
-                <div class="video-fluid">
-                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/eiBa1Q98vzg"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                        class="video-fluid-item"></iframe>
-                </div>
-                <figcaption>Persépolis, un canto a la tolerancia y a la libertad</figcaption>
-            </figure>
+            <h3>Adaptaciones</h3>
+            <picture>
+                <source media="(max-width: 400px)" srcset="/img/persepolis325.jpg">
+                <source media="(max-width: 900px)" srcset="/img/persepolis768.jpg">
+                <source media="(min-width: 900px)" srcset="/img/persepolis1280.jpg">
+                <img src="/img/persepolis1280.jpg" alt="Escena de la pelicula Persépolis basada en esta novela"
+                    class="img-responsive">
+            </picture>
+            <p>
+                El 27 de junio de 2007 se estrenó la película basada en la novela gráfica Persépolis, una película de
+                animación dirigida por Vincent Paronnaud y producida por Xavier Rigault y Marc-Antoine Robert. La
+                película, con música de Olivier Bernet, obtuvo una nominación a la Palma de Oro y consiguió el Premio
+                del jurado en el Festival de Cannes 2007. También consiguió el Premio Especial del Jurado en el Festival
+                Internacional de Cine Cinemanila, un Goya y en el año 2008, fue nominada a Mejor película animada en la
+                Entrega de los Oscar.
+            </p>
         </article>
 
         <aside class="relacionados">
@@ -171,7 +174,7 @@
                     <h3>Inscr&iacute;bete en este club</h3>
                 </div>
                 <a href="index.html#divRegistro">
-                    <img src="img/logo_small_icon_blue.png" class="animacionLogo">
+                    <img src="img/logo_small_icon_blue.png" class="animacionLogo" alt="Logo club giratorio">
                 </a>
             </div>
         </aside>

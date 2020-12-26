@@ -78,12 +78,10 @@
 
         <article class="biografia">
             <h2>Sobre la obra</h2>
-            <picture>
-                <source media="(max-width: 400px)" srcset="/img/poesia325.jpg">
-                <source media="(max-width: 900px)" srcset="/img/poesia768.jpg">
-                <source media="(min-width: 900px)" srcset="/img/poesia1280.jpg">
-                <img src="/img/poesia1280.jpg" alt="Poesia completa" class="img-responsive">
-            </picture>
+            <img srcset="img/PoseiasPortada320w.jpg 320w,
+            img/PoseiasPortada480w.jpg 480w,
+            img/PoseiasPortada800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+                src="img/PoseiasPortada800w.jpg" alt="Portada libro Poesias completas" class="img-responsive">
             <p>
                 Las Poesías de Arthur Rimbaud fueron escritas aproximadamente entre 1869 y 1872. El aguinaldo de los
                 huérfanos (1869) es el primer poema conocido de Rimbaud, esto si exceptuamos los que compuso en latín
@@ -110,15 +108,19 @@
                 la edad de 20 años, después de reunir una de sus principales obras, Illuminations.
             </p>
 
-            <h3>Book trailer</h3>
-            <figure>
-                <div class="video-fluid">
-                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/ZR--1Oa3eZk"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                        class="video-fluid-item"></iframe>
-                </div>
-                <figcaption>Carta de amor de Arthur Rimbaud a Paul Verlaine</figcaption>
-            </figure>
+            <h3>Adaptaciones</h3>
+            <picture>
+                <source media="(max-width: 400px)" srcset="/img/poesia325.jpg">
+                <source media="(max-width: 900px)" srcset="/img/poesia768.jpg">
+                <source media="(min-width: 900px)" srcset="/img/poesia1280.jpg">
+                <img src="/img/poesia1280.jpg" alt="Poesia completa" class="img-responsive">
+            </picture>
+            <p>
+                Quizás no se pueda encontrar fácilmente adaptaciones de un poema como se lo haría de una novela, pero sí
+                se puede encontrar varios ejemplos en donde un poema cumple un rol central en la película, tanto en su
+                relato como en lo que evoca, y es partir esto último donde se ve el mayor potencial en el aporte que la
+                poesía puede hacer al cine.
+            </p>
         </article>
 
         <aside class="relacionados">
@@ -164,7 +166,7 @@
                     <h3>Inscr&iacute;bete en este club</h3>
                 </div>
                 <a href="index.html#divRegistro">
-                    <img src="img/logo_small_icon_blue.png" class="animacionLogo">
+                    <img src="img/logo_small_icon_blue.png" class="animacionLogo" alt="Logo del club giratorio">
                 </a>
             </div>
         </aside>

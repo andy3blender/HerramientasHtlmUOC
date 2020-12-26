@@ -78,13 +78,10 @@
 
         <article class="biografia">
             <h2>Sobre la obra</h2>
-            <picture>
-                <source media="(max-width: 400px)" srcset="/img/odisea325.jpg">
-                <source media="(max-width: 900px)" srcset="/img/odisea768.jpg">
-                <source media="(min-width: 900px)" srcset="/img/odisea1280.jpg">
-                <img src="/img/odisea1280.jpg" alt="La Odisea" class="img-responsive">
-                <caption>Mosaico de Odiseo y las SIrenas. Túnez, siglo II DC.</caption>
-            </picture>
+            <img srcset="img/OdiseaPortada320w.jpg 320w,
+            img/OdiseaPortada480w.jpg 480w,
+            img/OdiseaPortada800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+                src="img/OdiseaPortada800w.jpg" alt="Portada libro La Odisea" class="img-responsive">
             <p>
                 La Odisea (en griego: Odýsseia) es un poema épico griego compuesto por 24 cantos, atribuido al
                 poeta griego Homero. Se cree que fue compuesta en el siglo VIII a. C. en los asentamientos que tenía
@@ -111,15 +108,42 @@
                 Salamina, Pilos, Cumas e Ítaca.
             </p>
 
-            <h3>Book trailer</h3>
-            <figure>
-                <div class="video-fluid">
-                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/_THp0IgEI1w"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                        class="video-fluid-item"></iframe>
-                </div>
-                <figcaption>Odisea, de Homero | RESEÑA</figcaption>
-            </figure>
+            <h3>Adaptaciones</h3>
+            <picture>
+                <source media="(max-width: 400px)" srcset="/img/odisea325.jpg">
+                <source media="(max-width: 900px)" srcset="/img/odisea768.jpg">
+                <source media="(min-width: 900px)" srcset="/img/odisea1280.jpg">
+                <img src="/img/odisea1280.jpg" alt="Mosaico de Odiseo y las sirenas" class="img-responsive">
+            </picture>
+            <p>
+                La Odisea de Homero, es uno de los textos más importantes e influyentes de la literatura Universal,
+                motivo por el cual se han realizado varias adaptaciones a la pantalla grande, las más importantes son
+                las siguientes:
+            </p>
+            <ul class="justificarLista">
+                <li><em>ULISES (1954) de Mario Camerini.</em> Kirk Douglas interpreta a Ulises en esta entretenida
+                    adaptación italiana del clásico de Homero.
+                    Silvana Mangano encarna a Penélope, Franco Interlenghi a Telémaco, Anthony Quinn a Antinoo, Rossana
+                    Podestá a Nausica y Elena Zareschi a Cassandra.
+                </li>
+                <li><em>HELENA DE TROYA (1955) de Robert Wise.</em> Rossana Podestá como Helena, Jack Sernas como Paris,
+                    Stanley Baker como Aquiles, Cedrick Hardwicke como Príamo y Niall MacGinnis como Menelao son los
+                    principales protagonistas de este título filmado en Italia por el siempre interesante Robert Wise,
+                    quien se basó en "La Ilíada" de Homero.
+                </li>
+                <li><em>LA ODISEA (1969) de Mario Bava.</em> Franco Rossi y Piero Schivazappa.
+                    La gran obra del griego Homero desarrollada en varios episodios.
+                    Muy correcta adaptación que cuenta con el protagonismo de Bekim Fehmiu, Irene Papas, Renaud Verley,
+                    Barbara Bach, Michele Breton y Juliette Mayniel.
+                </li>
+                <li><em>TROYA (2004) de Wolfgang Petersen.</em> La reina de Esparta, Helena (Diane Kruger),
+                    abandona a su esposo Menelao (Brendan Gleeson) tras ser raptada por el príncipe troyano Paris
+                    (Orlando Bloom). El hermano de Menelao, el rey de Micenas Agamenón (Brian Cox), lanzará una ofensiva
+                    contra la ciudad de Troya con el objetivo de rescatar a Helena. Para ello cuenta con la ayuda del
+                    mejor guerrero del momento, Aquiles (Brad Pitt), quien se verá enfrentado al poderoso príncipe
+                    Héctor (Eric Bana), hermano de Paris e hijo del rey Príamo (Peter O’Toole).
+                </li>
+            </ul>
         </article>
 
         <aside class="relacionados">
@@ -165,7 +189,7 @@
                     <h3>Inscr&iacute;bete en este club</h3>
                 </div>
                 <a href="index.html#divRegistro">
-                    <img src="img/logo_small_icon_blue.png" class="animacionLogo">
+                    <img src="img/logo_small_icon_blue.png" class="animacionLogo" alt="Logo del club giratorio">
                 </a>
             </div>
 

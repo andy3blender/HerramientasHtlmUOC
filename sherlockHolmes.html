@@ -78,12 +78,11 @@
 
         <article class="biografia">
             <h2>Sobre la obra</h2>
-            <picture>
-                <source media="(max-width: 400px)" srcset="/img/holmes325.jpg">
-                <source media="(max-width: 900px)" srcset="/img/holmes768.jpg">
-                <source media="(min-width: 900px)" srcset="/img/holmes1280.jpg">
-                <img src="/img/holmes1280.jpg" alt="Un mundo feliz" class="img-responsive">
-            </picture>
+            <img srcset="img/HomesPortada320w.jpg 320w,
+            img/HomesPortada480w.jpg 480w,
+            img/HomesPortada800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+                src="img/HomesPortada800w.jpg" alt="Portada libro Las aventuras de Sherlock Holmes"
+                class="img-responsive">
             <p>
                 Sherlock Holmes había dado ya muestras de su genio en Estudio en Escarlata y en El signo de los cuatro,
                 pero los lectores no se dieron cuenta de su genialidad. Entonces a Conan Doyle —¿a Watson?— se le
@@ -105,15 +104,23 @@
                 hijo y por su experiencia vivida como soldado raso en la Primera Guerra Mundial.
             </p>
 
-            <h3>Book trailer</h3>
-            <figure>
-                <div class="video-fluid">
-                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/GNgH8TBqOYg"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                        class="video-fluid-item"></iframe>
-                </div>
-                <figcaption>Reseña Crítica: Las aventuras de Sherlock Holmes de Arthur Conan Doyle</figcaption>
-            </figure>
+            <h3>Adaptaciones</h3>
+            <picture>
+                <source media="(max-width: 400px)" srcset="/img/holmes325.jpg">
+                <source media="(max-width: 900px)" srcset="/img/holmes768.jpg">
+                <source media="(min-width: 900px)" srcset="/img/holmes1280.jpg">
+                <img src="/img/holmes1280.jpg" alt="Un mundo feliz" class="img-responsive">
+            </picture>
+            <p>
+                Sherlock Holmes es sin duda el personaje de ficción que más ha sido representado en el cine, con más
+                de 260 películas donde fue el personaje principal.
+                Desde los comienzos del llamado séptimo arte, ya Conan Doyle deploraba que con frecuencia las
+                investigaciones de Holmes en el cine se situaran en la época en la que el film se realizaba, y no en la
+                época victoriana, que era la de las novelas originales. Aprovechando este error de partida, emanó más
+                tarde durante la Segunda Guerra Mundial, la utilización del personaje por parte de los americanos y con
+                fines de propaganda. Afortunadamente, las obras más recientes se orientan a recrear el ambiente
+                victoriano.
+            </p>
         </article>
 
         <aside class="relacionados">
@@ -159,7 +166,7 @@
                     <h3>Inscr&iacute;bete en este club</h3>
                 </div>
                 <a href="index.html#divRegistro">
-                    <img src="img/logo_small_icon_blue.png" class="animacionLogo">
+                    <img src="img/logo_small_icon_blue.png" class="animacionLogo" alt="Logo club giratorio">
                 </a>
             </div>
         </aside>

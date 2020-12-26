@@ -27,8 +27,6 @@
 
             <div class="cabecera-logo">
                 <a href="index.html">
-                    <!-- <img src="img/clublector-isologo.png" alt="Logo Club">
-                    <strong>Club Lector</strong> -->
                     <img src="img/logo_small.png" alt="Logo del Club">
                 </a>
             </div>
@@ -80,12 +78,10 @@
 
         <article class="biografia">
             <h2>Sobre la obra</h2>
-            <picture>
-                <source media="(max-width: 400px)" srcset="/img/losArboles325.jpg">
-                <source media="(max-width: 900px)" srcset="/img/losArboles768.jpg">
-                <source media="(min-width: 900px)" srcset="/img/losArboles1280.jpg">
-                <img src="/img/losArboles1280.jpg" alt="Los arboles mueren de pie'" class="img-responsive">
-            </picture>
+            <img srcset="img/LosArbolesPortada320w.jpg 320w,
+            img/LosArbolesPortada480w.jpg 480w,
+            img/LosArbolesPortada800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+                src="img/LosArbolesPortada800w.jpg" alt="Portada libro Los arboles muerende pie" class="img-responsive">
             <p>
                 El señor Balboa tenía un nieto desalmado al que, un día, tuvo que echar de casa. Luego de un tiempo,
                 Balboa empieza a escribir cartas apócrifas haciéndose pasar por su nieto para que su esposa no se
@@ -101,8 +97,6 @@
             </p>
 
             <h3>Sobre Alejandro Casona</h3>
-            <!-- <div class="imagen-capital" style="background-image: url('img/casona.jpg');">
-            </div> -->
             <img src="img/casona.jpg" class="fotoCircular" alt="Foto de Alejandro Casona">
             <p>
                 Alejandro Rodríguez Álvarez, conocido como Alejandro Casona, o también «El perdido» (Besullo, Cangas del
@@ -112,15 +106,19 @@
                 poética tiene el regusto amargo de la supervivencia.
             </p>
 
-            <h3>Book trailer</h3>
-            <figure>
-                <div class="video-fluid">
-                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/6d462jaX_fk"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                        class="video-fluid-item"></iframe>
-                </div>
-                <figcaption>Los &aacute;rboles mueren de pie, Alejandro Casona</figcaption>
-            </figure>
+            <h3>Adaptaciones</h3>
+            <picture>
+                <source media="(max-width: 400px)" srcset="/img/losArboles325.jpg">
+                <source media="(max-width: 900px)" srcset="/img/losArboles768.jpg">
+                <source media="(min-width: 900px)" srcset="/img/losArboles1280.jpg">
+                <img src="/img/losArboles1280.jpg" alt="Los arboles mueren de pie'" class="img-responsive">
+            </picture>
+            <p>
+                Los árboles mueren de pie es una película de Argentina realizada en 1951, dirigida por Carlos Schlieper,
+                con guion del dramaturgo Alejandro Casona basada en su obra teatral homónima. El filme, que combina la
+                realidad y la fantasía pertenece a la Época de Oro del Cine argentino. Una obra que pasa por la emoción,
+                la risa, la ternura y el drama. Su rodaje original se encuentra en blanco y negro.
+            </p>
         </article>
 
         <aside class="relacionados">
@@ -166,7 +164,7 @@
                     <h3>Inscr&iacute;bete en este club</h3>
                 </div>
                 <a href="index.html#divRegistro">
-                    <img src="img/logo_small_icon_blue.png" class="animacionLogo">
+                    <img src="img/logo_small_icon_blue.png" class="animacionLogo" alt="Logo del club giratorio">
                 </a>
             </div>
         </aside>
