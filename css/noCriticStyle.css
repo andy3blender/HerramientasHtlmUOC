@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --colorPrincipal:#328cc1;
+    --colorSecundario:#0b3c5d;
+    --colorOscuro:#1d2731;
+    --resaltar:#d9b310;
+  }
+  
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    text-align: left;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 1.1rem;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+  .piePagina:hover {
+    clip-path: circle(100% at 50% 100%);
+    transition: all 0.6s;
+  }
+  .contenedorRedesSociales img:hover{
+    transform: scale(1.1);
+  }
+  .btn:hover{
+    background-color: var(--resaltar);
+    color: #FFFFFF;
+  }
+  .tarjeta a img:hover{
+    opacity: .85;
+  }
+  .tarjeta-arrow:focus{
+    outline: 0;
+  }
+  .tarjeta-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+  }
+  .contenidoCentral{
+    width: 75%;
+    margin:auto;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .book .book-image {
+    width: 100%;
+    height: 225px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .book .book-label.label-blue {
+    background: #046380;
+    color: #020F14;
+  }
+  .book .book-label.label-bluerain{
+    background: var(--colorSecundario);
+  }
+  .book .book-label.label-yellow {
+    background: var(--resaltar);
+  }
+  .book .book-label {
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    /* -webkit-transition: all .2s ease-in-out; */
+    transition: all .2s ease-in-out;
+  }
+  .book .book-label {
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    /* -webkit-transition: all .2s ease-in-out; */
+    transition: all .2s ease-in-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .book:hover .book-label {
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .book .book-label p {
+    padding: 0 15px;
+  }
+  .book .book-by span {
+    color: #5586e2;
+  }
+  .book .book-title {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .book .book-by {
+    font-size: 1.2rem;
+    color: #7c8e9c;
+    text-align: center;
+  }
+  .book .book-number {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  .piePagina-itemsNavegacion a:hover{
+    text-decoration: underline;
+    color: var(--resaltar);
+  }
+  
+  /* LECTURAS 2020 */
+  .seccionClub{
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  
+  /* DETALLE LECTURA */
+  .contenedorLectura{
+    width: 85%;
+    margin:auto;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .fichaTecnica{
+    text-align: left;
+  }
+  .fichaTecnica dl{
+    padding-bottom: 15px;
+  }
+  .fichaTecnica dt{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    padding-top: 8px;
+    margin-bottom: 8px;
+  }
+  .fichaTecnica dd{
+    line-height: 25px;
+    margin-left: 15px;
+    font-size: 1.2rem;
+  }
+  .biografia{
+    text-align: justify;
+    line-height: 25px;
+  }
+  .biografia h2{
+    padding-bottom: 15px;
+  }
+  .biografia h3{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 2.2rem;
+  }
+  .cuadroCita {
+    position: relative;
+    text-align: center;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    background-color: lightgray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .cuadroCita p{
+  line-height: 20px;
+  }
+  .imagen-capital{
+    float: left;
+    width: 190px;
+    height: 190px;
+    margin-right: 10px;
+    border-radius: 150px;
+    shape-outside: circle();
+  }
+  
+  .relacionados{
+    /* max-height: 20px; */
+    overflow: hidden;
+  }
+  
+  .relacionados li{
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  .relacionados a{
+    text-decoration: none;
+  }
+  .relacionados a:hover{
+    text-decoration: underline;
+    color: var(--resaltar);
+  }
+  .img-responsive{
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* ANIMACIONES */
+  /* titulos categorias */
+  .tituloClub{
+    background-color: #252839;
+  }
+  .tituloClub h2{
+    width: fit-content;
+    position: relative;
+    color: #252839;
+    /* -webkit-text-stroke: 0.5px #383d52; */
+  }
+  .tituloClub h2::before{
+    content: attr(data-foo);
+    position: absolute;
+    width: 0;
+    color: #01fe87;
+    /* -webkit-text-stroke: 0px #383d52; */
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: mostrarTitulo 6s linear infinite;
+    white-space: nowrap;
+  }
+  
+  @keyframes mostrarTitulo{
+    0%, 10%, 100%{
+      width: 0;
+    }
+    70%, 90%{
+      width: 100%;
+    }
+  }
+  
+  /* logo giratorio */
+  .animacionLogo{
+    width:80px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    animation: giraLogo 7s infinite;  
+  }
+  @keyframes giraLogo{
+    0%{
+      transform: rotateY(0deg);
+    }
+    50%{
+      transform: rotateY(180deg);
+    }
+    100%{
+      transform: rotateY(360deg);
+    }
+  }
+  .cardRelacionados{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-bottom: 10px;
+  }
+  .cardRelacionados-titulo{
+    background-color: var(--colorSecundario);
+    color: white;
+  }
+  .fotoCircular{
+    clip-path: circle(50% at 50% 50%);
+    float: left; 
+    margin: 0px 15px 15px 0px;
+    width: 190px;
+    height: 190px;
+  }
